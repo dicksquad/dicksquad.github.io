@@ -6,6 +6,49 @@
     <meta name="keywords" content="Dicksquad website, dicksquad">
     <meta name="author" content="Wesley Lesher">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Script-->
+<script>
+	var userstr = "";
+
+		
+	
+	
+	window.onload = function start() {
+    slide(10);
+}
+function slide(repeats) {
+    if (repeats > 0) {
+        var input = document.getElementById("userinput");
+		input.onkeypress = function(e) {
+		e = e || window.event;
+		var charCode = (typeof e.which == "number") ? e.which : e.keyCode;
+		
+		if (charCode > 0) {
+				
+				userstr = userstr.concat(e.key);
+				if(e.key == "Enter"){
+					enter();
+				}
+			}
+		}
+        window.setTimeout(
+          function(){
+            slide(repeats - 1)
+          },
+          3000
+        );
+    }
+}
+
+function enter(){
+	if(userstr == "dirEnter"){
+		console.log("dir");
+		document.getElementById("userinput").value = "";
+	}
+	userstr = "";
+}
+
+</script>
 </head>
 <!-- Body -->
 <body>
