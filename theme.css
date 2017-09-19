@@ -5,8 +5,8 @@ body{
 }
 @font-face {
     font-family: 'perfect_dos_vga_437regular';
-    src: url("dicksquad.github.io/dosvga-webfont.woff2") format('woff2'),
-         url("dicksquad.github.io/dosvga-webfont.woff") format('woff');
+    src: url("../dicksquad.github.io/dosvga-webfont.woff2") format('woff2'),
+         url("../dicksquad.github.io/dosvga-webfont.woff") format('woff');
 
     font-weight: normal;
     font-style: normal;
