@@ -6,7 +6,7 @@
     <meta name="keywords" content="Dicksquad website, dicksquad">
     <meta name="author" content="Wesley Lesher">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>console</title>
+    <title>MS DOS</title>
 <!--Script-->
 <script>
 	var userstr = "";
@@ -25,9 +25,10 @@ function slide(repeats) {
 		var charCode = (typeof e.which == "number") ? e.which : e.keyCode;
 		
 		if (charCode > 0) {
-				
+				if(e.key != "Enter"{
 				userstr = userstr.concat(e.key);
-				if(e.key == "Enter"){
+				}
+				else if(e.key == "Enter"){
 					enter();
 				}
 			}
@@ -42,7 +43,7 @@ function slide(repeats) {
 }
 
 function enter(){
-	if(userstr == "dirEnter"){
+	if(userstr == "dir"){
 		console.log("dir");
 		alert("User typed dir and hit the enter key");
 		document.getElementById("userinput").value = "";
