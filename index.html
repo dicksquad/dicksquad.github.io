@@ -25,10 +25,8 @@ function slide(repeats) {
 		var charCode = (typeof e.which == "number") ? e.which : e.keyCode;
 		
 		if (charCode > 0) {
-				if(e.key != "Enter"{
 				userstr = userstr.concat(e.key);
-				}
-				else if(e.key == "Enter"){
+ 				if(e.key == "Enter"){
 					enter();
 				}
 			}
