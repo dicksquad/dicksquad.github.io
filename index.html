@@ -44,10 +44,10 @@ function slide(repeats) {
 function enter(){
 	if(userstr == "dir"){
 		console.log("dirEnter");
-		alert("User typed dir and hit the enter key");
+		
 		document.getElementById("userinput").value = "";
 	}
-	else if(userstr == "dicksquadEnter"){
+	/*else if(userstr == "dicksquadEnter"){
 		console.log("dicksquad");
 		alert("sick quads")
 		document.getElementById("userinput").value = "";
@@ -61,7 +61,7 @@ function enter(){
 		console.log("sick quads");
 		window.location.replace("supersecretwebpage");
 		document.getElementById("userinput").value = "";
-	}
+	}*/
 	else if(userstr == "projects.htmlEnter"){
 		console.log("projects.html");
 		window.location.replace("projects.html");
@@ -78,5 +78,9 @@ function enter(){
 	</label>
 	<input type="text" id="userinput" class="console">
 	</input>
+	<br />
+	<label class="console">
+		C:\> projects.html
+	</label>
 </body>
 </html>
