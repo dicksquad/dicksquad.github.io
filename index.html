@@ -15,6 +15,7 @@
 	
 	
 	window.onload = function start() {
+	document.getElementById("dir").style.visibility = "hidden";
     document.getElementById("userinput").focus();
     slide(10);
 }
@@ -44,7 +45,7 @@ function slide(repeats) {
 function enter(){
 	if(userstr == "dir"){
 		console.log("dirEnter");
-		
+		document.getElementById("dir").style.visibility = "visible";
 		document.getElementById("userinput").value = "";
 	}
 	/*else if(userstr == "dicksquadEnter"){
@@ -79,7 +80,7 @@ function enter(){
 	<input type="text" id="userinput" class="console">
 	</input>
 	<br />
-	<label class="console">
+	<label class="console" id="dir">
 		C:\> projects.html
 	</label>
 </body>
